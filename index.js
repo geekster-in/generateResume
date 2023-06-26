@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 80;
 const bodyParser = require("body-parser");
 const cors = require("cors");
 require("dotenv").config();
@@ -40,6 +40,6 @@ app.get("/", async(req, res) => {
 
 
 
-app.listen(port,  '0.0.0.0',() =>
+app.listen(port, "0.0.0.0",() =>
   console.log(`Hello world app listening on port ${port}!`)
 );
